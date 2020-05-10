@@ -1,0 +1,179 @@
+*
+{
+	font-family: 'Acme', sans-serif;
+}
+
+body
+{
+	background-color: lightgrey;
+	margin: 0 auto;
+	padding: 0;
+}
+
+header
+{
+	height: 80vh;
+
+	color: lightgrey;
+
+	background: url(../ressources/header-section.jpg) 100% fixed;
+	background-size: 100%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	line-height: 2px;
+}
+
+h1.title
+{
+	font-size: 80px;
+	text-transform: uppercase;
+}
+
+h3.slogan
+{
+	font-size: 35px;
+	font-style: italic;
+}
+
+/* Destinations. */
+
+.subtitle
+{
+	padding-top: 60px;
+	color: #353535;
+	opacity: 0.80;
+}
+
+section#destinations
+{
+	margin: 0px 20% 0px 20%;
+}
+
+div.destinations-item
+{
+	color: #373737;
+	height: 300px;
+	width: 250px;
+	margin: 12px;
+	position: relative;
+	flex: 1 0 25%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	transition: 0.5s all;
+}
+
+div.destinations-item:hover
+{
+	transform: scale(1.1);
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: 0.5s all;
+}
+
+div.destinations-group
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.barcelone {background-image: url(../ressources/barcelone.jpg);}
+.dubai {background-image: url(../ressources/dubai.jpg);}
+.londres {background-image: url(../ressources/londres.jpg);}
+.paris {background-image: url(../ressources/paris.jpg);}
+.philippines {background-image: url(../ressources/philippines.jpg);}
+.tunis {background-image: url(../ressources/tunis.jpg);}
+
+.overlay
+{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+
+span.nom
+{
+	position: relative;
+	color: #353535;
+	background-color: white;
+	padding: 12px;
+	top: 20px;
+	float: right;
+	font-size: 18px;
+}
+
+span.prix
+{
+	position: relative;
+	color: white;
+	background-color: #EF8F1D;
+	font-size: 22px;
+	top: 220px;
+	padding: 15px;
+}
+
+/* Formulaire */
+
+header form
+{
+	background-color: #EF8F1D;
+	padding: 20px;
+}
+
+.search-form
+{
+	transform: translateY(100px);
+	transition: 0.5s all;
+}
+
+.search-form:hover
+{
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: 0.5s all;
+}
+
+.form-group, .button-submit
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-group label
+{
+	color: white;
+	margin: 5px;
+	padding: 10px;
+}
+
+.form-group input, select, option
+{
+	border: none;
+	padding: 5px;
+	background-color: bisque;
+	margin: 5px;
+}
+
+.button-submit input
+{
+	background-color: #353535;
+	border: none;
+	color: lightgrey;
+	font-size: 22px;
+	margin-top: 15px; 
+}
+
+/* Pied de page. */
+footer p
+{
+	text-align: center;
+	color: #353535;
+	opacity: 0.80;
+	padding: 10px;
+}

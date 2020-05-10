@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="ressources/airplane.ico" />
+	<title>Air Company</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1 class="title">🌎 Air company ✈️</h1>
+		<h3 class="slogan">«Site de compagnie aérienne en HTML/CSS»</h3>
+
+		<div class="search-form">
+			<form method="post">
+				<div class="form-group">
+					<label for="provenance">Ville de départ :</label>
+					<input type="text" name="provenance" id="provenance" placeholder="Paris, Barcelone...">
+
+					<label for="arrivee">Ville d'arrivée :</label>
+					<input type="text" name="arrivee" id="arrivee" placeholder="Paris, Barcelone...">
+				</div>
+
+				<div class="form-group">
+					<label for="depart">Date de départ :</label>
+					<input type="date" name="depart" id="depart" value="10/05/2020">
+
+					<label for="retour">Date de retour :</label>
+					<input type="date" name="retour" id="retour" value="17/05/2020">
+				</div>
+
+				<div class="form-group">
+					<label for="adultes">Nombres d'adultes :</label>
+					<select name="adultes" id="adultes">
+						<option selected="selected">Aucun Adulte</option>
+						<option>1 Adulte</option>
+						<option>2 Adultes</option>
+						<option>3 Adultes</option>
+						<option>4 Adultes</option>
+						<option>5 Adultes</option>
+					</select>
+
+					<label for="enfants">Nombres d'enfants :</label>
+					<select name="enfants" id="enfants">
+						<option selected="selected">Aucun Enfant</option>
+						<option>1 Enfant</option>
+						<option>2 Enfants</option>
+						<option>3 Enfants</option>
+						<option>4 Enfants</option>
+						<option>5 Enfants</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="type">Classe :</label>
+					<select name="type" id="type">
+						<option selected="selected">Economique</option>
+						<option>Affaire</option>
+					</select>
+				</div>
+
+				<div class="button-submit">
+					<input value="Rechercher" type="submit" name="recherche" id="recherche">
+				</div>
+			</form>
+		</div>
+	</header>
+
+	<section id="destinations">
+		
+		<h3 class="subtitle">Destinations les plus demandées :</h3>
+
+		<div class="destinations-group">
+			<div class="destinations-item barcelone">
+				<div class="overlay">
+					<span class="prix">Dès 80 €</span>
+					<span class="nom">Barcelone</span>
+				</div>
+			</div>
+
+			<div class="destinations-item dubai">
+				<div class="overlay">
+					<span class="prix">Dès 500 €</span>
+					<span class="nom">Dubaï</span>
+				</div>
+			</div>
+
+			<div class="destinations-item londres">
+				<div class="overlay">
+					<span class="prix">Dès 65 €</span>
+					<span class="nom">Londres</span>
+				</div>
+			</div>
+
+			<div class="destinations-item paris">
+				<div class="overlay">
+					<span class="prix">Dès 55 €</span>
+					<span class="nom">Paris</span>
+				</div>
+			</div>
+
+			<div class="destinations-item philippines">
+				<div class="overlay">
+					<span class="prix">Dès 1200 €</span>
+					<span class="nom">Manille</span>
+				</div>
+			</div>
+
+			<div class="destinations-item tunis">
+				<div class="overlay">
+					<span class="prix">Dès 90 €</span>
+					<span class="nom">Tunis</span>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<footer>
+		<hr>
+		<p>&copy; 2020 - Air Company - Tout droits réservés. - <a href="">CGU</a> </p>
+	</footer>
+</body>
+</html>
